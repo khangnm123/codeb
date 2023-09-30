@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>BridiCio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" type="image/x-icon" href="images/favicon.png">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+   </head>
+   <body>
+      <!--------Header-------->
+      <div class="header_big">
+         <header>
+            <div class="header_left">
+               <div class="logo">
+                  <h1>BrandCio</h1>
+               </div>
+               <nav id="menu" >
+                  <ul >
+                     <li><a href="#">Media Booking</a></li>
+                     <li><a href="#">Digital ads</a></li>
+                     <li><a href="#">Blogs</a></li>
+                     <li onclick="MenuClose()" class="close"><ion-icon name="close-outline" style="width: 16px; height: 16px; color: #000;"></ion-icon></li>
+                  </ul>
+               </nav>
+            </div>
+            <div class="catogory">
+               <ul>
+                  <li><a href="tel: 4153490105">+1 415-349-0105</a></li>
+                  <li><i onclick="Search()" ><ion-icon name="search-outline" style="width: 16px; height: 16px; color: #C2C2C2;"></ion-icon></i>
+                     <div class="search" id="search">
+                        <div class="center_flex">
+                              <input type="text" placeholder="Search...">
+                              <i onclick="Close()"><ion-icon name="close-outline" style="width: 16px; height: 16px; color: #000;"></ion-icon></i>
+                        </div>
+                     </div>
+                  </li>
+                  <li><i><img src="./images/Group 897.svg" alt=""></i></li>
+                  <li onclick="MenuAdd()" class="menu" ><i><ion-icon class="menu_outl" name="menu-outline"></ion-icon></i></li>
+               </ul>
+            </div>
+         </header>
+         <div class="content_text">
+            <div class="center_flex">
+               <div class="center_flex-list">
+                  <div class="text_left">
+                     <div class="test">
+                        <h2>Brandico</h2>
+                        <p class="mg">Là một nền tảng giúp các doanh nghiệp lập kế hoạch và thực hiện chiến dịch quảng cáo kỹ
+                           thuật số nhanh hơn và hiệu
+                           quả
+                           hơn dựa trên số liệu được phân tích.</p>
+                     </div>
+                     <div class="btn">
+                        <a href="#">Khám Phá Ngay<i><ion-icon name="arrow-forward-outline" class="arrows"></ion-icon></i></a>
+                     </div>
+                  </div>
+                  <div class="text_right">
+                     <img src="./images/image 125.png" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--------BRANDICO có thể giúp gì------->
+      <section class="helper">
+         <div class="center_flex">
+            <div class="text_center">
+               <h2 class="pd"><b>BrandCio</b> có thể giúp gì cho bạn?</h2>
+               <p>Chúng tôi cố gắng xây dựng các dịch vụ của nghành Digital Marketing một cách có hệ thống và dự trên dữ liệu
+                  có ý nghĩa
+                  để mang đến cho bạn nhiều sự lựa chọn hơn trong việc lập kế hoạch và thực hiện chiến dịch tiếp thị một cách
+                  hiệu quả.</p>
+            </div>
+            <div class="container_last">
+      
+               <div class="image_left">
+                  <img src="./images/Frame.png" alt="" class="one">
+                  <h3 class="pd">Media Booking</h3>
+                  <p>Lập chiến dịch Media Booking chỉ trong 5’ với các sản phẩm được niêm yết từ Publishers</p>
+                  <ul>
+                     <li><i><img src="./images/check.png" alt=""></i> <p>PR Booking </p></li>
+                     <li><i><img src="./images/check.png" alt=""></i><p>Banner CPD/CPC/CPM</p> </li>
+                     <li><i><img src="./images/check.png" alt=""></i><p>Các gói dịch vụ khuyến mãi</p></li>
+                  </ul>
+                  <div class="btn">
+                     <a href="#">Tìm hiểu thêm <i><ion-icon name="arrow-forward-outline" class="arrows"></ion-icon></i></a>
+                  </div>
+                 
+               </div>
+               <div class="image_right">
+                  <img src="./images/Frame.png" alt="" class="one">
+                  <h3 class="pd">Digital Ads</h3>
+                  <p>Thực hiện chiến dịch quảng cáo hàng tháng hay sử dụng các gói có sẵn</p>
+                  <ul>
+                     <li><i><img src="./images/check.png" alt=""></i><p>Quảng cáo Google</p></li>
+                     <li><i><img src="./images/check.png" alt=""></i> <p>Quảng cáo Facebook</p></li>
+                     <li><i><img src="./images/check.png" alt=""></i> <p  class="wekit-box">Các kênh khác: Zalo, Tiktok...</p></li>
+                  </ul>
+                 <div class="btn"><a href="#">Tìm hiểu thêm <i><ion-icon name="arrow-forward-outline" class="arrows"></ion-icon></i></a></div>
+               </div>
+            </div>
+         </div>
+      
+      </section>
+      <!----------Tại sao chọn DIGICIO---------------->
+      <section class="why">
+         <div class="center_flex">
+                  <div class="text_center">
+                     <h2 class="pd">Tại sao chọn <b>DigiCio?</b></h2>
+                     <p><b>DigiCio</b> hoạt động trên cơ chế minh bạch các số liệu, hạng mục công việc và chi phí đối với khách hàng và
+                        các đối tác kết
+                        hợp cùng chúng tôi.</p>
+                  </div>
+            <div class="flex_center">
+               <div class="flex_center-content">
+                  <img src="./images/Frame (1).png" alt="">
+                  <h2 class="pd" id="small">100+</h2>
+                  <p class="pd1">Chúng tôi thu thập và làm giàu kho dữ liệu của hơn 100 Publishers lớn ở Việt Nam</p>
+               </div>
+               <div class="flex_center-content">
+                  <img src="./images/Frame (1).png" alt="">
+                  <h2 class="pd">5000+</h2>
+                  <p>Hơn 5000 sản phẩm đến từ các kênh quảng cáo có ở Việt Nam</p>
+               </div>
+               <div class="flex_center-content">
+                  <img src="./images/Frame (1).png" alt="">
+                  <h2 class="pd">25+</h2>
+                  <p>Đối tác cùng kết hợp với DigiCio để tạo nên nền tảng này</p>
+               </div>
+               <div class="flex_center-content">
+                  <img src="./images/Frame (1).png" alt="">
+                  <h2 class="pd">15+</h2>
+                  <p>Là số lượng nhà phát triển sản phẩm cùng tham gia vào xây dựng nền tảng này</p>
+               </div>
+            </div>
+            <div class="text_center pb">
+               <h2>Các đối tác quảng cáo của digicio</h2>
+            </div>
+            <div class="digico">
+               <img src="./images/image 89.png" alt="" style="mix-blend-mode: lighten;">
+               <img src="./images/image 89.png" alt="" style="mix-blend-mode: lighten;" id="pd_bt">
+            </div>
+         </div>
+      </section>
+      <!-------------Cập nhật từ Digico-------------------->
+      <section class="update">
+         <div class="center_flex">
+      <div class="text_center">
+         <h2 class="pd">CẬP NHẬT MỚI NHẤT TỪ <b>DIGICIO</b></h2>
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna
+            aliqua.</p>
+      </div>
+            <div class="update_list">
+               <div class="context_left">
+                  <h3>Theo chuyên mục</h3>
+                  <div class="context_left-list">
+                     <div class="bg_p">
+                        <a href="#">Knowledge Center</a>
+                     </div>
+      
+                 
+                  
+                     <div class="bg_p">
+                        <a href="#">Advertising Revenue</a>
+                     </div>
+                
+                 
+                     <div class="bg_p">
+                        <a href="#">Digital Video</a>
+                     </div>
+              
+                  
+                     <div class="bg_p">
+                        <a href="#">Consumers</a>
+                     </div>
+                  </div>
+                  <div class="btn_list">
+                     <a href="#">Xem Tất Cả <i><ion-icon name="arrow-forward-outline" class="arrows"></ion-icon></i></a>
+                  </div>
+      
+               </div>
+               <div class="box-right">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <div class="context_right">
+                           <div class="context_right-thumnails">
+                                 <div class="thumnail_text">
+                                       <a href="#"><img src="./images/Rectangle 1125.png" alt=""></a>
+                                       <div class="test">
+                                                <h2>FY 2020 Digital Video Advertising Spend Report</h2>
+                                                <p>2020 was a banner year for Digital Video advertising—particularly for Connected TV (CTV). Both increased viewership
+                                                   and
+                                                   the fluidity of Digital Video ad buying and optimization resulted in</p>
+                                                <div class="date_time">
+                                                   <a href="#">Knowledge Center - 04.22.21</a>
+                                                   <i><ion-icon name="arrow-forward-outline" class="arrows" style="color: #ED624F;"></ion-icon></i>
+                                                </div>
+                                       </div>
+                              
+                                 </div>
+                           </div>
+      
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="context_right">
+                                 <div class="context_right-thumnails">
+                                    <div class="thumnail_text">
+                                       <a href="#"><img src="./images/Rectangle 1125 (1).png" alt=""></a>
+                                       <div class="test">
+                                                <h2>FY 2020 Digital Video Advertising Spend Report</h2>
+                                                <p>2020 was a banner year for Digital Video advertising—particularly for Connected TV (CTV). Both increased
+                                                   viewership and
+                                                   the fluidity of Digital Video ad buying and optimization resulted in</p>
+                                                <div class="date_time">
+                                                   <a href="#">Knowledge Center - 04.22.21</a>
+                                                   <i><ion-icon name="arrow-forward-outline" class="arrows" style="color: #ED624F;"></ion-icon></i>
+                                                </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="context_right">
+                                    <div class="context_right-thumnails">
+                                       <div class="thumnail_text">
+                                          <a href="#"><img src="./images/Rectangle 1125 (2).png" alt=""></a>
+                                          <div class="test">
+                                                   <h2>FY 2020 Digital Video Advertising Spend Report</h2>
+                                                   <p>2020 was a banner year for Digital Video advertising—particularly for Connected TV (CTV). Both increased
+                                                      viewership and
+                                                      the fluidity of Digital Video ad buying and optimization resulted in</p>
+                                                   <div class="date_time">
+                                                      <a href="#">Knowledge Center - 04.22.21</a>
+                                                      <i><ion-icon name="arrow-forward-outline" class="arrows" style="color: #ED624F;"></ion-icon></i>
+                                                   </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="btn">
+                        <a href="#">Xem Tất Cả <i><ion-icon name="arrow-forward-outline" class="arrows"></ion-icon></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-----------Form---------->
+      <section class="form_list"
+         style="background: url('./images/bg__contact.svg'); background-position: center; background-repeat: no-repeat;">
+         <div class="center_flex">
+            <form action="">
+               <div class="form_container">
+                     <div class="texts">
+                        <h2 class="pd">Bạn có cần <b>Digicio</b> giúp?</h2>
+                        <p>Để biết thêm thông tin, vui lòng điền vào mẫu bên dưới, đội ngũ chúng tôi sẽ liên hệ lại trong thời gian
+                           sớm
+                           nhất, xin cảm ơn!</p>
+                     </div>
+                     <div class="flex_content">
+                        <div class="flex_content-list">
+                           <div class="input">
+                           <label class="form-label">Họ và tên:</label>
+                           <input type="name" class="form-control" >
+                           </div>
+                           <div class="input">
+                              <label class="form-label">Email:</label>
+                              <input type="email" class="form-control">
+                           </div>
+                           <div class="input">
+                              <label class="form-label">Điện thoại:</label>
+                              <input type="phone" class="form-control">
+                           </div>    
+                           <div class="input">
+                           <label class="form-label">Hạng mục công việc:</label>
+                           <select class="form-control" aria-label="Default select example">
+                           <option selected>PR Booking</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                        </div>
+                        <div class="input">
+                           <label class="form-label">Công Ty:</label>
+                           <input type="cty" class="form-control">
+                        </div>
+                    
+                        <div class="input">
+                           <label class="form-label">Số lượng nhân viên:</label>
+                        <select class="form-control" aria-label="Default select example">
+                           <option selected>Chọn</option>
+                           <option value="1">One</option>
+                           <option value="2">Two</option>
+                           <option value="3">Three</option>
+                        </select>
+                        </div>
+                       
+                     
+                        <div class="text__area">
+                           <label for="">Nội dung cần trao đổi?</label>
+                           <textarea name="" id="" cols="60" rows="4" style="width: 100%; border-radius: 5px;"></textarea>
+                        </div>
+
+                     </div>
+                     </div>
+                        <div class="btn">
+                           <a href="#">Gửi <i><ion-icon name="arrow-forward-outline" class="arrows"></ion-icon></i></a>
+                        </div>
+               </div>
+        
+            </form>
+         </div>
+      </section>
+      <footer>
+         <div class="center_flex">
+            <div class="footer_list">
+               <div class="footer_list-last">
+                  <h3>DigiCio</h3>
+                  <ul>
+                     <li>
+                        <p>Call now:</p>
+                        <a href="tel: 4153490105">+1 415-349-0105</a>
+                     </li>
+                     <li>
+                        <a href="#">infor@digi.co</a>
+                     </li>
+                     <li>
+                        <a href="#">249 Lê Thánh Tôn, P.Bến Thành, Q.1, TP. HCM</a>
+                     </li>
+                  </ul>
+      
+               </div>
+               <div class="footer_list-last">
+                  <h4>Services</h4>
+                  <ul>
+                     <li>
+                        <a href="#">Media Booking</a>
+                     </li>
+                     <li>
+                        <a href="#">Digital ads</a>
+                     </li>
+                  </ul>
+      
+               </div>
+      
+      
+               <div class="footer_list-last">
+                  <h4>EXPLORE US</h4>
+                  <ul>
+                     <li>
+                        <a href="#">About us</a>
+                     </li>
+                     <li>
+                        <a href="#">Career</a>
+                     </li>
+                     <li>
+                        <a href="#">Price</a>
+                     </li>
+                     <li>
+                        <a href="#">Blogs </a>
+                     </li>
+                     <li>
+                        <a href="#">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+      
+      
+               <div class="footer_list-last">
+                  <h4>Fllow US</h4>
+                  <p id="small">Based on our long accumulated experience, DBINE provides the best program for your business.
+                  </p>
+                  <ul class="social">
+                     <li>
+                        <a href="#">
+                           <img src="./images/Group 830.png" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./images/Group 828.png" alt="">
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <img src="./images/Group 829.png" alt="">
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <script src="./js/add.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/owl.carousel.js"></script>
+      <script src="js/main.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   </body>
+</html>
