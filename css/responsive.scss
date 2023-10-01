@@ -133,7 +133,7 @@
     .header_big{
         header{
             ul li a{
-                color: #007bff;
+                color: #FFFFFF;
             }
             .header_left{
                  nav{
@@ -143,11 +143,13 @@
                         justify-content: center;
                         width: 250px;
                         height: 100%;
-                        background: #F5F7FB;
+                        background:#ED624F;
                         left: -48px;
                         z-index: 1000;
                         transition: 1s ease-in-out;
-                        display: none;          
+                        display: none;   
+                        top: 0px;  
+                        border-right: 3px solid #FFFFFF;     
                   ul{
                     position: absolute;
                         top: 50%;
